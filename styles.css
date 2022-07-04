@@ -39,6 +39,9 @@ li{
 .btn, h1, h2, h4{
     font-family: 'Fraunces', serif;
 }
+img{
+    width: 100%;
+}
 
 /* NAV */
 nav{
@@ -50,6 +53,9 @@ nav{
 .nav-header{
     display: flex;
     justify-content: space-between;
+}
+.logo{
+    width: 150px;
 }
 .nav-header button{
     position: relative;
@@ -108,6 +114,10 @@ header h1{
 }
 header img{
     animation: down 1.5s ease-in-out infinite;
+}
+.arrow{
+    height: 100px;
+    width: 40px;
 }
 
 /* ABOUT SECTION */
@@ -210,7 +220,12 @@ section img{
 /* TESTIMONIALS SECTION */
 
 .testimonials{
-    padding: 4rem 0;
+    padding: 4rem 1rem;
+}
+.person-wrapper{
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 .testimonials h3{
     font-family: 'Fraunces', serif;
@@ -231,7 +246,7 @@ section img{
 .person-info p{
     color: var(--very-dark-grayish-blue);
     font-size: 16px;
-    width: 500px;
+    width: 300px;
     margin: 0 auto;
 }
 .person-info h4{
@@ -318,14 +333,11 @@ footer a{
     .links a{
         color: var(--white);
     }
-    a.contact{
+    .links .button{
         background-color: var(--white);
-        border-radius: 20px;
-        padding: 0.5rem 1rem;
-        color: var(--very-dark-desaturated-blue);
-        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     }
-    a.contact:hover{
+    .links .button:hover{
         background-color: transparent;
         color: var(--white);
     }
@@ -423,9 +435,6 @@ footer a{
         display: flex;
         justify-content: center;
         gap: 1rem;
-    }
-    .person-info p{
-        width: 300px;
     }
 }
 
